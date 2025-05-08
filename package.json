@@ -5,6 +5,7 @@
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "scripts": {
+    "prepare": "npm run build",
     "prettier": "prettier --write \"./{src,examples}/**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
     "prettier-check": "prettier -l \"./{src,examples}/**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
     "build": "npm run build:types && npm run build:js",
@@ -83,7 +84,7 @@
   "peerDependencies": {
     "lodash": "^4.17.15",
     "moment": "^2.25",
-    "react": "^0.14 || ^15.0 || ^16.0 || ^17.0 || ^18.0",
-    "react-dom": "^0.14 || ^15.0 || ^16.0 || ^17.0 || ^18.0"
+    "react": "^0.14 || ^15.0 || ^16.0 || ^17.0 || ^18.0 || ^20.0",
+    "react-dom": "^0.14 || ^15.0 || ^16.0 || ^17.0 || ^18.0 || ^20.0"
   }
 }
